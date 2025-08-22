@@ -1,24 +1,18 @@
-import { readFileSync, writeFileSync } from 'fs'
+import express from "express"
 
-try {
-    const fileBuffer = readFileSync('./data.json')
-    const fileText = fileBuffer.toString()
-    const fileData = JSON.parse(fileText)
+// const express = require('express')
+const app = express()
+const port = 5000
 
-    const userAction = process.argv[2]
-    const key = process.argv[3]
-    const value = process.argv[4]
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
 
-    if (userAction === "get") {
-        console.log(fileData[key])
-    } else if (userAction === "set") {
-        fileData[key] = value
-        writeFileSync("./data.json", JSON.stringify(fileData))
-        console.log("Ok")
-    } else {
-        console.log("Comando inválido")
-    }
+app.get("/teste", function(request, response){
+    response.send("mensagem de teste")
+})
 
-} catch (error) {
-    console.log("Algo inesperado ocorreu =/")
-}
+
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`)
+})
