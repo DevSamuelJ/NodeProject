@@ -1,7 +1,7 @@
 import express from "express"
 import { readFileSync } from "fs"
 
-// const express = require('express')
+
 const app = express()
 app.use(express.json())
 const port = 5000
@@ -22,7 +22,7 @@ app.get('/', (req, res) => {
 app.post("/", (request, response) =>{
     try{
         console.log(request.body)
-        
+
     }catch(error){
         console.log("Algo deu errado!")
     }
