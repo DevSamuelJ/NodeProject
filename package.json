@@ -1,29 +1,26 @@
-
 {
+  "dependencies": {
+    "express": "^5.1.0"
+  },
   "name": "json-storage",
+  "type": "module",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "module",
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node ./index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DevSamuelJ/ProjetosNodeJS.git"
+    "url": "git+https://github.com/MateusGesualdo/json-storage.git"
   },
   "keywords": [],
-  "author": "DevSamuelJ",
+  "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/DevSamuelJ/ProjetosNodeJS.git/issues"
+    "url": "https://github.com/MateusGesualdo/json-storage/issues"
   },
-  "homepage": "https://github.com/DevSamuelJ/ProjetosNodeJS.git#readme",
-  "dependencies": {
-    "express": "^5.1.0"
-  }
+  "homepage": "https://github.com/MateusGesualdo/json-storage#readme"
 }
-
-
- 
